@@ -2,10 +2,10 @@
 
 from aws_cdk import core
 
-from cdk.cdk_stack import CdkStack
+from cdk.sentry_stack import SentryStack
 
 
 app = core.App()
-CdkStack(app, "cdk")
+SentryStack(app, "sentry")
 
 app.synth()
